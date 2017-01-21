@@ -8,5 +8,11 @@ describe('Emails', function(){
             assert.deepEqual(findEmails(emailSentence), ["middle@sentence.com"]);
             assert.deepEqual(findEmails(emailSentence).length, 1);
         });
+
+        it('finds multiple emails in sentence', function() {
+            var emailSentence = "Sentence with multiple@sentence.com middle@sentence.com in them.";
+            assert.deepEqual(findEmails(emailSentence), ["multiple@sentence.com", "middle@sentence.com"]);
+            assert.deepEqual(findEmails(emailSentence).length, 2);
+        });
     });
 });
