@@ -32,4 +32,4 @@ Support Project
 
 Find this package useful? 
 
-[Support this project on GitHugz!](http://www.githugz.com)
+[Support this project on GitHugz!](http://www.githugz.com?find-emails-in-string)
