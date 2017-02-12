@@ -38,5 +38,11 @@ describe('Emails', function(){
             assert.deepEqual(findEmails(emailSentence), ["white@space.com"]);
             assert.deepEqual(findEmails(emailSentence).length, 1);
         });
+
+        it('finds examples in README.md', function(){
+            var emailSentence = "Sentence with multiple@example.com and another@example.com";
+            assert.deepEqual(findEmails(emailSentence), ["multiple@example.com", "another@example.com"]);
+            assert.deepEqual(findEmails(emailSentence).length, 2);
+        })
     });
 });

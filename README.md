@@ -26,10 +26,3 @@ findEmails("Sentence with multiple@example.com and another@example.com.");
 // => ["multiple@example.com", "another@example.com"]
 
 ```
-
-Support Project
------
-
-Find this package useful? 
-
-[Support this project on GitHugz!](http://www.githugz.com?find-emails-in-string)
